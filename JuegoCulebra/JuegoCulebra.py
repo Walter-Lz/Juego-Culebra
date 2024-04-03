@@ -83,14 +83,14 @@ def generarObstaculos():
     for i in range(cantidadObstaculos):
         Coordenada_ObstaculoX= (random.randint(0,560)) 
         Coordenada_ObstaculoY= (random.randint(0,460))
-        xVentanaObstaculo = ((Coordenada_ObstaculoX + 15) // 30) * 30 + 15  # coordenas para la ventana
+        xVentanaObstaculo = ((Coordenada_ObstaculoX + 15) // 30) * 30 + 15  # coordenadas para la ventana
         yVentanaObstaculo = ((Coordenada_ObstaculoY + 15) // 30) * 30 + 15
         paresOrdenados= (xVentanaObstaculo,yVentanaObstaculo)
         tag_nameObstaculo = f"Obstaculo{i}"
         if canvas.find_withtag(tag_nameObstaculo):
             print("Las Coordenadas coinciden con un Obstaculo ya agregado.")
         else:
-            x=((Coordenada_ObstaculoY + 15) // 30)  #Coordenas para la lista
+            x=((Coordenada_ObstaculoY + 15) // 30)  #coordenadas para la lista
             y= ((Coordenada_ObstaculoX + 15) // 30)
             if(x,y) == (0,0)or (x,y)==(1,0):
                 x+=1
