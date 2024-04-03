@@ -179,7 +179,7 @@ def salir ():
     ventana.destroy()
     ventana.quit()
 
-if '__name__'=='__name__':
+if __name__=='__main__':
     posicion_objetivo= []    # lista de objetivos con sus coordenadas
     posicion_Obstaculos= []
     posicion_culebra = (0,0)
